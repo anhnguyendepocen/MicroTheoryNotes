@@ -38,5 +38,6 @@ II. Utility - Ranking of Preferences
   
 III. "Goods" More is Better - Nonsatiation
 
+nbn
 
   
