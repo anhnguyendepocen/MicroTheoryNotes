@@ -97,7 +97,7 @@
 <div id="preferences-and-utility" class="section level1">
 <h1><span class="header-section-number">Chapter 3</span> Preferences and Utility</h1>
 <p>How can we model people’s choices?</p>
-<p>I. Axioms of Rational Choice</p>
+<p><strong>I. Axioms of Rational Choice</strong></p>
 <ol style="list-style-type: decimal">
 <li><p>Completeness: For any <span class="math inline">\(A \text{ and } B\)</span> either<br />
 a) <span class="math inline">\(A \succ B\)</span>,<br />
@@ -110,22 +110,123 @@ c) <span class="math inline">\(A \sim B\)</span></p>
 <p>If <span class="math inline">\(A \succ B\)</span>, then “close to <span class="math inline">\(A\)</span>” <span class="math inline">\(\succ B\)</span></p>
 <p>Technical detail that allows us to take derivatives.</p></li>
 </ol>
-<ol start="2" style="list-style-type: upper-roman">
-<li>Utility - Ranking of Preferences</li>
-</ol>
+<p><strong>II. Utility - Ranking of Preferences</strong></p>
 <ul>
 <li>If <span class="math inline">\(A \succ B\)</span> then <span class="math inline">\(U(A) &gt; U(B)\)</span></li>
 <li>Utility function assigns a number</li>
 <li>Not unique. Two utility functions can represent the same preferences</li>
 <li><p>This means utility functions only tell us order, not magnitude.</p>
 <p><span class="math inline">\(U_1, \text{ &amp; } U_2\)</span> can represent the same preferences while <span class="math inline">\(U_1(A)=1\)</span> and <span class="math inline">\(U_2(A)=1,000\)</span></p></li>
-<li><p>This is useful in emperical work because prefrences are preserved under a strictly monotonic transformation.</p>
+<li><p>This is useful in empirical work because preferences are preserved under a strictly monotonic transformation.</p>
 <p><span class="math inline">\(U_2(A) = ln(U)\)</span> - same preferences. {sketch ln(x)}</p></li>
 </ul>
-<ol start="3" style="list-style-type: upper-roman">
-<li>“Goods” More is Better - Nonsatiation</li>
+<p><strong>III. “Goods” More is Better - Non-satiation</strong></p>
+<div class="figure">
+<img src="images/3_1.jpg" alt="Figure 1. Non-satiation" />
+<p class="caption">Figure 1. Non-satiation</p>
+</div>
+<p>Actually, just from the transitive axiom of rational choice we can deduce one important thing about indifference curves. There can be no crossing indifference curves. See figure 2.</p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(A \succ B\)</span> and <span class="math inline">\(B \sim C \Rightarrow A \succ C\)</span> by the transitive axiom of rational prefrences.</li>
+<li>Also, it is clear from the figure that <span class="math inline">\(C \succ D\)</span> because it is more of both x and y.</li>
+<li>But also <span class="math inline">\(D \sim A\)</span> because they are on the same indifference curve.</li>
+<li>Using the transitive axiom again <span class="math inline">\(\Rightarrow C \succ A\)</span></li>
 </ol>
-<p>nbn</p>
+<p>But this is a contradiction. So there can be no crossing indifference curves.</p>
+<div class="figure">
+<img src="images/3_9.jpg" alt="Figure 2. No Crossing Indifference Curves" />
+<p class="caption">Figure 2. No Crossing Indifference Curves</p>
+</div>
+<p><strong>IV. Indifference Curves and the MRS</strong></p>
+<ul>
+<li>If utility is represented by the function <span class="math inline">\(U=f(x,y)\)</span>, then <span class="math inline">\(10 = f(x,y)\)</span> represents an implicit function that define all the combinations of x and y that achieve the same level of utility (10).</li>
+<li>Called an <strong>indifference curve</strong></li>
+</ul>
+<div class="figure">
+<img src="images/3_2.jpg" alt="Figure 3. Preferred Set" />
+<p class="caption">Figure 3. Preferred Set</p>
+</div>
+<p>Figure 2 shows all the combinations of x and y that yield higher utility than <span class="math inline">\(U=10\)</span>.</p>
+<ul>
+<li>Slope of the indifference curve represents preferences over tradoffs between x and y.</li>
+</ul>
+<blockquote>
+<p>If you had to give up one unit of y how much additional x would it take to make you just as happy?</p>
+</blockquote>
+<div class="figure">
+<img src="images/3_3.jpg" alt="Figure 4. Slope of the Indifference Curve" />
+<p class="caption">Figure 4. Slope of the Indifference Curve</p>
+</div>
+<p>You can imagine the two points in figure 3 getting closer and closer together, then the concept of slope of the indifference curve at a point becomes an important measure of a person’s willingness to trade one good for another at a given utility level.</p>
+<p>We define the concept of <strong>Marginal Rate of Substitution (MRS)</strong> as follows:</p>
+<p><span class="math display">\[MRS = -\frac{dy}{dx} \Bigg\rvert_{U=U_1}\]</span></p>
+<p><strong>V. Properties of a Utility Function</strong></p>
+<p>Assuming diminishing MRS says something about hte curvature of the indifference curves.</p>
+<ul>
+<li>It turns out that for a candidate function to qualify as a valid utiliyt function, the indifference curves must be downward sloped, and in addition they must exhibit diminishing MRS. I.e., in figure 4 the tangent line at point A must be more steep than the tangent line at point B.</li>
+</ul>
+<div class="figure">
+<img src="images/3_4.jpg" alt="Figure 5. Slope of the Indifference Curve" />
+<p class="caption">Figure 5. Slope of the Indifference Curve</p>
+</div>
+<ul>
+<li>This is equivalent to saying that indifference curves must be convex.</li>
+</ul>
+<p><span class="math display">\[\frac{d^2y}{dx^2} \Bigg\rvert_{U=U_1} &gt;0 \]</span></p>
+<p>{Smileys for remembering the 2nd order conditions}</p>
+<ul>
+<li>This is the same as saying the preferred set is a convex set.</li>
+</ul>
+<p><strong>Definition</strong> A set <span class="math inline">\(X\)</span> is convex if and only if the linear combination of any two points in the set is also in the set.</p>
+<p><span class="math display">\[x_1,x_2 \in X \Rightarrow ax_1 + bx_2 \in X \text{ for any non-negative constants } a \text{ and } b\]</span></p>
+<div class="figure">
+<img src="images/3_5.jpg" alt="Figure 6. Convex Sets in Math" />
+<p class="caption">Figure 6. Convex Sets in Math</p>
+</div>
+<p>In figure 5, the second graph shows a set that is not convex because we can find constants a and b such that <span class="math inline">\(ay_1 + by_2 \notin \Psi\)</span></p>
+<ul>
+<li>In an economic context, preferred sets are convext if and only if indifference curves exhibit diminishing MRS.</li>
+</ul>
+<div class="figure">
+<img src="images/3_6.jpg" alt="Figure 7. Convex Preferred Set" />
+<p class="caption">Figure 7. Convex Preferred Set</p>
+</div>
+<p>This implies a preference for balance rather than extremes.</p>
+<ul>
+<li>All these are quivalent to saying a candidate function is an appropriate utility function if and only if it is a quasi-concave function.</li>
+</ul>
+<p><strong>VI. MRS and Marginal Utility</strong></p>
+<p>Suppose utility is given by <span class="math inline">\(U(x,y)\)</span>. Now take the total differential of the utility function.</p>
+<p><span class="math display">\[dU = \frac{\partial U}{\partial x}dx +  \frac{\partial U}{\partial y}dy\]</span></p>
+<p>Now, <span class="math inline">\(dU=0\)</span> represents an indifference curve.</p>
+<span class="math display">\[\begin{align*}
+0 &amp; = \frac{\partial U}{\partial x}dx +  \frac{\partial U}{\partial y}dy \\
+-\frac{\partial U}{\partial x}dx &amp; = \frac{\partial U}{\partial y}dy \\
+\frac{\frac{\partial U}{\partial x}}{\frac{\partial U}{\partial y}} &amp; = -\frac{dy}{dx} \\
+\frac{MU_x}{MU_y} &amp; = MRS 
+\end{align*}\]</span>
+<p>So, we have found that the MRS is equal to the ratio of the marginal utilities.</p>
+<p><strong>VII. Examples of Specific Utility Functions</strong></p>
+<div class="figure">
+<img src="images/3_7.jpg" alt="Figure 8. Specific Utility Examples" />
+<p class="caption">Figure 8. Specific Utility Examples</p>
+</div>
+<ol style="list-style-type: decimal">
+<li><p>Cobb-Douglass Utility. <span class="math inline">\(U(x,y) = x^{\alpha}y^{\beta}\)</span></p></li>
+<li><p>Perfect Substitutes. <span class="math inline">\(U(x,y) = \alpha x + \beta y\)</span></p></li>
+<li><p>Perfect Compliments. <span class="math inline">\(U(x,y) = min(\alpha x, \beta y)\)</span></p></li>
+<li><p>Constant Elasticity of Substitution (CES). <span class="math inline">\(U(x,y) = \alpha \frac{x^{\delta}}{\delta} + \beta \frac{y^{\delta}}{\delta} \text{ for } \delta \neq 0\)</span> Notice that the first three are special cases of the CES utility function. <span class="math inline">\(\delta \rightarrow 0\)</span> is Cobb-Douglas, <span class="math inline">\(\delta = 1\)</span> is perfect substitutes, and <span class="math inline">\(\delta \rightarrow \infty\)</span> is perfect compliments.</p></li>
+</ol>
+<p>All CES utility functions are examples of Homothetic Utility functions.</p>
+<p><strong>Homothetic Utiliy</strong></p>
+<p>A utility function is homothetic if and only if <span class="math inline">\(U(ax,ay) = aU(x,y)\)</span> for any constant <span class="math inline">\(a\)</span>. This implies that along a ray through the origin, the MRS of all indifference curves will be the same, as shown in figure 9.</p>
+<div class="figure">
+<img src="images/3_8.jpg" alt="Figure 9. Specific Utility Examples" />
+<p class="caption">Figure 9. Specific Utility Examples</p>
+</div>
+<p>This property also implies that the MRS depends only on the ratio of the goods. $MRS(). To see an example, consider the Cobb-Douglass utility.</p>
+<p><span class="math display">\[MRS = \frac{\frac{\partial U}{\partial x}}{\frac{\partial U}{\partial y}}  = \frac{\alpha x^{\alpha - 1} y^{\beta}}{\beta x^{\alpha} y^{\beta - 1}} = \frac{\alpha}{\beta} \frac{y}{x}\]</span></p>
+<p>This concept is not to be confused with homothetic functions in math. In math, a homothetic function is a monotonic transformation of a homogenous function. A function is homogenous of degree k if <span class="math inline">\(f(\alpha x, \alpha y) = \alpha^k f(x,y)\)</span>.</p>
 
 </div>
             </section>
