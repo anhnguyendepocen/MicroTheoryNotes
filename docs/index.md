@@ -2,7 +2,7 @@
 title: "Lecture Notes for Microeconomic Theory"
 author: "Mindy L. Mallory"
 description: "These are my lecture notes for Master's Microeconomics at the University of Illinois Agriculture and Consumer Economics."
-date: "2017-09-25"
+date: "2017-09-28"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
